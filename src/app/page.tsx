@@ -4,15 +4,18 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main style={{ minHeight: '100vh', backgroundColor: '#ffffff' }}>
+    <main>
       {/* Hero Section */}
-      <section className="section" style={{ backgroundColor: '#f9fafb' }}>
+      <section className="hero-section">
         <div className="container">
           <div style={{ maxWidth: '48rem', margin: '0 auto', textAlign: 'center' }}>
+            <span className="gold-accent" style={{ fontSize: '1.25rem', fontFamily: 'Inter', display: 'block', marginBottom: '1rem' }}>
+              Your Legacy, Forever Preserved
+            </span>
             <h1 className="heading-1">
               Preserve Their Voice, Stories, and Legacy—Forever.
             </h1>
-            <p style={{ fontSize: '1.25rem', marginBottom: '2rem' }} className="body-text">
+            <p style={{ fontSize: '1.25rem', marginBottom: '2rem', opacity: 0.9 }} className="body-text">
               Turn memories into interactive experiences your family can cherish for generations.
             </p>
             <Link 
@@ -26,11 +29,12 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="section" style={{ backgroundColor: '#ffffff' }}>
+      <section className="section section-cream">
         <div className="container">
           <div style={{ maxWidth: '48rem', margin: '0 auto', textAlign: 'center' }}>
             <h2 className="heading-2">About Memora</h2>
-            <p style={{ fontSize: '1.125rem' }} className="body-text">
+            <div className="section-divider"></div>
+            <p style={{ fontSize: '1.25rem' }} className="body-text">
               Memora captures your stories, wisdom, and essence, creating a lifelike AI-powered legacy that loved ones can interact with anytime.
             </p>
           </div>
@@ -38,9 +42,10 @@ export default function Home() {
       </section>
 
       {/* Benefits Section */}
-      <section className="section" style={{ backgroundColor: '#f9fafb' }}>
+      <section className="section section-ivory">
         <div className="container">
-          <h2 style={{ textAlign: 'center', marginBottom: '3rem' }} className="heading-2">Key Benefits</h2>
+          <h2 className="heading-2" style={{ textAlign: 'center' }}>Key Benefits</h2>
+          <div className="section-divider"></div>
           <div className="benefits-grid">
             <div className="card">
               <h3 className="heading-3">Interactive Memories</h3>
@@ -65,22 +70,31 @@ export default function Home() {
       </section>
 
       {/* Ideal Users Section */}
-      <section className="section" style={{ backgroundColor: '#ffffff' }}>
+      <section className="section section-cream">
         <div className="container">
-          <h2 style={{ textAlign: 'center', marginBottom: '3rem' }} className="heading-2">Ideal Users</h2>
+          <h2 className="heading-2" style={{ textAlign: 'center' }}>Perfect For</h2>
+          <div className="section-divider"></div>
           <div style={{ maxWidth: '42rem', margin: '0 auto' }}>
             <ul className="ideal-users-list">
               <li className="card">
-                <p style={{ fontSize: '1.125rem', fontWeight: 500 }}>Families looking to preserve legacy</p>
+                <p style={{ fontSize: '1.125rem', fontWeight: 500 }}>
+                  Families looking to preserve their precious legacy
+                </p>
               </li>
               <li className="card">
-                <p style={{ fontSize: '1.125rem', fontWeight: 500 }}>Parents creating lasting memories for children</p>
+                <p style={{ fontSize: '1.125rem', fontWeight: 500 }}>
+                  Parents creating lasting memories for their children
+                </p>
               </li>
               <li className="card">
-                <p style={{ fontSize: '1.125rem', fontWeight: 500 }}>Individuals navigating health or life milestones</p>
+                <p style={{ fontSize: '1.125rem', fontWeight: 500 }}>
+                  Individuals navigating important life milestones
+                </p>
               </li>
               <li className="card">
-                <p style={{ fontSize: '1.125rem', fontWeight: 500 }}>Professionals and leaders extending influence and wisdom</p>
+                <p style={{ fontSize: '1.125rem', fontWeight: 500 }}>
+                  Professionals sharing their wisdom and influence
+                </p>
               </li>
             </ul>
           </div>
@@ -88,10 +102,14 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section id="consultation" className="section" style={{ backgroundColor: '#f9fafb' }}>
+      <section id="consultation" className="section section-ivory">
         <div className="container">
           <div style={{ maxWidth: '48rem', margin: '0 auto', textAlign: 'center' }}>
-            <h2 className="heading-2">Start Your Journey Today</h2>
+            <span className="gold-accent" style={{ fontSize: '1.125rem', fontFamily: 'Inter', display: 'block', marginBottom: '1rem' }}>
+              Begin Your Journey
+            </span>
+            <h2 className="heading-2">Start Preserving Your Legacy Today</h2>
+            <div className="section-divider"></div>
             <p style={{ fontSize: '1.25rem', marginBottom: '2rem' }} className="body-text">
               Book a meeting today to explore Memora and discover customized options perfect for you and your family.
             </p>
