@@ -4,11 +4,25 @@ import Image from 'next/image';
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
+// Define the Calendly event type
+interface CalendlyEvent {
+  event: string;
+  data: {
+    event: string;
+    payload: {
+      event: {
+        uri: string;
+        uuid: string;
+      };
+    };
+  };
+}
+
 export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    const handleCalendlyEvent = (e: any) => {
+    const handleCalendlyEvent = (e: MessageEvent<CalendlyEvent>) => {
       if (e.data.event === 'calendly.event_scheduled') {
         router.push('/thank-you');
       }
