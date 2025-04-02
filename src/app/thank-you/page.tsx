@@ -27,7 +27,7 @@ export default function ThankYou() {
           
           {/* Confirmation Message */}
           <p className="description mb-8">
-            We look forward to helping you preserve your legacy. We'll be in touch soon to discuss how we can capture your story.
+            We look forward to helping you preserve your legacy. We&#39;ll be in touch soon to discuss how we can capture your story.
           </p>
 
           {/* Return Home Link */}
