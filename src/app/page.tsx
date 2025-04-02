@@ -25,9 +25,8 @@ export default function Home() {
           </h1>
           
           {/* Description */}
-          {/* eslint-disable-next-line react/no-unescaped-entities */}
           <p className="description">
-            Memora captures your essence—voice, stories, and wisdom—so your loved ones can connect with you anytime, even after you're gone.
+            Memora captures your essence—voice, stories, and wisdom—so your loved ones can connect with you anytime, even after you&#39;re gone.
           </p>
           
           {/* Calendly Widget */}
