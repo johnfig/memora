@@ -10,25 +10,79 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background-color: var(--color-background);
   color: var(--color-primary);
+  text-align: center;
 }
 
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+.container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
+.logo-container {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto 2rem;
+}
+
+@media (min-width: 768px) {
+  .logo-container {
+    width: 10rem;
+    height: 10rem;
   }
-  
-  body {
-    color: var(--color-text);
-    background-color: var(--color-ivory);
-    font-family: 'Inter', sans-serif;
+}
+
+.main-title {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin: 0 auto 1rem;
+  max-width: 42rem;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .main-title {
+    font-size: 2rem;
+    letter-spacing: 0.03em;
   }
+}
+
+.description {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-secondary);
+  margin: 0 auto 2rem;
+  max-width: 36rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .description {
+    font-size: 1.125rem;
+  }
+}
+
+.calendly-wrapper {
+  width: 100%;
+  max-width: 42rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 0.5rem;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  overflow: hidden;
 }
 
 @layer components {
