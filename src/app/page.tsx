@@ -41,7 +41,7 @@ export default function Home() {
           
           {/* Description */}
           <p className="description">
-            Memora captures your essence—voice, stories, and wisdom—so your loved ones can connect with you anytime, even after you're gone.
+            Memora captures your essence—voice, stories, and wisdom—so your loved ones can connect with you anytime, even after you&#39;re gone.
           </p>
           
           {/* Calendly Widget */}
