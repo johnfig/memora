@@ -1,8 +1,23 @@
 'use client';
 
 import Image from 'next/image';
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleCalendlyEvent = (e: any) => {
+      if (e.data.event === 'calendly.event_scheduled') {
+        router.push('/thank-you');
+      }
+    };
+
+    window.addEventListener('message', handleCalendlyEvent);
+    return () => window.removeEventListener('message', handleCalendlyEvent);
+  }, [router]);
+
   return (
     <main className="min-h-screen flex items-center justify-center py-8 md:py-16">
       <div className="container">
@@ -26,7 +41,7 @@ export default function Home() {
           
           {/* Description */}
           <p className="description">
-            Memora captures your essence—voice, stories, and wisdom—so your loved ones can connect with you anytime, even after you&#39;re gone.
+            Memora captures your essence—voice, stories, and wisdom—so your loved ones can connect with you anytime, even after you're gone.
           </p>
           
           {/* Calendly Widget */}
