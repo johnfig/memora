@@ -21,12 +21,12 @@ export default function Home() {
           
           {/* Tagline */}
           <h1 className="main-title">
-            Preserve Your Legacy Through AI
+            Your Story, In Your Voice. Forever.
           </h1>
           
           {/* Description */}
           <p className="description">
-            Create an interactive AI experience that captures your voice, stories, and wisdom for future generations.
+          Memora captures your essence—voice, stories, and wisdom—so your loved ones can connect with you anytime, even after you're gone.
           </p>
           
           {/* Calendly Widget */}
