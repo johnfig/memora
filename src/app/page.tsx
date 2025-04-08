@@ -54,18 +54,18 @@ export default function Home() {
           </h1>
           
           {/* Description */}
-          <p className="description">
+          <p className="description mb-6">
             Memora captures your essence—voice, stories, and wisdom—so your loved ones can connect with you anytime, even after you&#39;re gone.
           </p>
-          
-          {/* Calendly Widget */}
-          <div className="w-full max-w-xl mx-auto rounded-lg bg-white p-1 shadow-lg overflow-hidden">
-            <div 
-              className="calendly-inline-widget" 
-              data-url="https://calendly.com/john-fig/memora-discovery-call"
-              style={{ minWidth: '320px', height: '800px' }}
-            />
-          </div>
+
+          {/* Learn More Button */}
+          <a
+            href="https://form.typeform.com/to/ZxZ7frel"
+            rel="noopener noreferrer"
+            className="learn-more-link"
+          >
+            Learn More Today
+          </a>
         </div>
       </div>
     </main>

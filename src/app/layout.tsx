@@ -55,7 +55,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
@@ -68,11 +67,6 @@ export default function RootLayout({
         {/* End Google Tag Manager (noscript) */}
 
         {children}
-        
-        <Script 
-          src="https://assets.calendly.com/assets/external/widget.js"
-          strategy="lazyOnload"
-        />
       </body>
     </html>
   );
