@@ -64,7 +64,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="learn-more-link"
           >
-            Learn More Today
+            Join the Waitlist Today
           </a>
         </div>
       </div>
